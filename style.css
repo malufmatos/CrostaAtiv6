@@ -1,0 +1,135 @@
+:root{
+    --background-color: #5334F2;
+    --yellow : #DCDE79;
+    --soft-pink : #EDE0E0;
+    --soft-yellow : #FBFFCD;
+
+    --primary-font: "Figtree", sans-serif;
+
+}
+
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--background-color);
+}
+
+a{
+    text-decoration: none;
+    color: var(--soft-pink);
+    text-align: center;
+    display: inline;
+    font-family: var(--primary-font);
+    padding-right: 5rem;
+}
+
+
+@keyframes load{
+    0%, 100%{
+        padding-bottom: 15rem
+        ;
+    } 50%{
+        padding-bottom: 21rem;
+    }
+}
+
+.preloading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+
+    background: radial-gradient(97.08% 97.08% at 50% 50%, var(--background-color) 32.5%, var(--yellow) 100%);
+}
+
+.preloading h1{
+    font-family: var(--primary-font);
+    text-align: center;
+    line-height: 3rem;
+
+    font-weight: 700;
+    font-size: 3rem;
+
+    color: var(--soft-pink);
+}
+
+.rocket_launch{
+    font-size: 6rem;
+    color: var(--soft-yellow);
+    transform: rotate(-45deg);
+}
+
+.animated{
+    position: absolute;
+    animation: load 1s infinite linear;
+} 
+
+.content{
+    display: none;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px white solid;
+    align-items: center;
+    padding: 2rem;
+}
+
+.person_raised_hand{
+    font-size: 4rem;
+    padding-left: 4rem;
+    color: white;
+}
+
+.links{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+@media (min-width: 320px){
+    :root{
+        font-size: 4px;
+    }
+}
+
+@media (min-width: 375px){
+    :root{
+        font-size: 5px;
+    }
+}
+
+@media (min-width: 425px){
+    :root{
+        font-size: 6px;
+    }
+}
+
+@media (min-width: 768px){
+    :root{
+        font-size: 7px;
+    }
+}
+
+@media (min-width: 1024px){
+    :root{
+        font-size: 8px;
+    }
+}
+
+@media (min-width: 1440px){
+    :root{
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 2560px){
+    :root{
+        font-size: 12px;
+    }
+}
