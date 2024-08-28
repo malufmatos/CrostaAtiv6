@@ -1,0 +1,312 @@
+:root{
+    --background-color: #5334F2;
+    --yellow : #DCDE79;
+    --soft-pink : #EDE0E0;
+    --soft-yellow : #FBFFCD;
+
+    --primary-font: "Figtree", sans-serif;
+
+}
+
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--background-color);
+}
+
+a{
+    text-decoration: none;
+    color: var(--soft-pink);
+    text-align: center;
+    display: inline;
+    font-family: var(--primary-font);
+    padding-right: 5rem;
+}
+
+main{
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3em;
+    color: rgba(237, 224, 224, 1);
+}
+
+footer{
+    text-align: center;
+    font-family: Figtree;
+    color: rgba(237, 224, 224, 1);
+    font-size: 3rem;
+    margin-top: 2em;
+}
+
+
+
+@keyframes load{
+    0%, 100%{
+        padding-bottom: 15rem
+        ;
+    } 50%{
+        padding-bottom: 21rem;
+    }
+}
+
+.preloading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+
+    background: radial-gradient(97.08% 97.08% at 50% 50%, var(--background-color) 32.5%, var(--yellow) 100%);
+}
+
+.preloading h1{
+    font-family: var(--primary-font);
+    text-align: center;
+    color: var(--soft-pink);
+}
+
+.rocket_launch{
+    font-size: 6rem;
+    color: var(--soft-yellow);
+    transform: rotate(-45deg);
+}
+
+.animated{
+    position: absolute;
+    animation: load 1s infinite linear;
+} 
+
+.content{
+    display: none;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px white solid;
+    align-items: center;
+    padding: 2rem;
+}
+
+.person_raised_hand{
+    font-size: 4rem;
+    padding-left: 4rem;
+    color: white;
+}
+
+.links{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image, .text{
+    text-align: center;
+    padding: 1em;
+}
+
+.position{
+    margin-top: -1em;
+    position: relative;
+    top: 3em;
+    right: 3em;
+}
+
+.text{
+    text-align: start;
+    letter-spacing: 1px;
+    font-family: Figtree;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    margin-bottom: 2em;
+}
+
+.button{
+    color: #fff;
+    background-color: #5334F2;
+    border: solid #fff 1px;
+    border-radius: 10px;
+    padding: 0.3em 0.9em;
+    font-family: Figtree;
+}
+
+.text h1{
+    padding: 1em 0em;
+}
+
+.text .p{
+    padding-bottom: 2em;
+}
+
+.row{
+    margin-top: 2em;
+    width: 90%;
+    border-bottom: solid #fff 1px;
+}
+
+footer h1{
+    padding: 0.5em 1em;
+}
+
+
+@media (min-width: 320px){
+
+    .box-load{
+        font-size: 2em;
+    }
+    :root{
+        font-size: 4px;
+    }
+    .title{
+        gap: 2em;
+    }
+    .eclipse{
+        width: 250px;
+        height: auto;
+    }
+    .about-me{
+        width: 200px;
+        height: auto;
+    }
+    .text-image{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 375px){
+    header{
+        padding-top: 2em;
+    }
+
+    .position{
+        top: 4em;
+        right: 6em;
+    }
+    a{
+        font-size: 1.5em;
+    }
+}
+
+@media (min-width: 425px){
+    .about-me{
+        width: 250px;
+        height: auto;
+    }
+    .eclipse{
+        width: 300px;
+        height: auto;
+    }
+}
+
+@media (min-width: 768px){
+    .box-load{
+        font-size: 5em;
+    }
+    header{
+        padding-top: 4em;
+        padding-bottom: 4em;
+    }
+    a{
+        font-size: 1.5em;
+        padding-right: 5em;
+    }
+    .text-image{
+        flex-direction: row;
+        gap: 3em;
+        padding: 0em 2em;
+    }
+    .image{
+        padding-left: 6em;
+    }
+    .text{
+        padding-top: 7em;
+    }
+    .button{
+        font-size: 1.1em;
+    }
+}
+
+@media (min-width: 1024px){
+    .text-image, .row{
+        width: 70%;
+    }
+    .box-load{
+        font-size: 7em;
+    }
+    footer{
+        display: flex;
+        justify-content: center;
+    }
+    .footer{
+        width: 65%;
+    }
+    .eclipse{
+        width: 300px;
+        height: auto;
+    }
+}
+
+@media (min-width: 1440px){
+    .box-load{
+        font-size: 9em;
+    }
+    header{
+        padding-top: 7em;
+    }
+    a{
+        font-size: 2em;
+    }
+    main, footer {
+        font-size: 4.5em;
+    }
+    .about-me{
+        width: 400px;
+        height: auto;
+    }
+
+    .eclipse{
+        width: 500px;
+        height: auto;
+    }
+}
+
+@media (min-width: 2560px){
+    .box-load{
+        font-size: 12em;
+    }
+    header{
+        padding-top: 10em;
+    }
+    a{
+        font-size: 3em;
+    }
+    .eclipse{
+        width: 800px;
+        height: auto;
+    }
+    .about-me{
+        width: 700px;
+        height: auto;
+    }
+    main, footer {
+        font-size: 7em;
+    }
+
+}
