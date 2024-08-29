@@ -49,10 +49,9 @@ footer{
 
 @keyframes load{
     0%, 100%{
-        padding-bottom: 15rem
-        ;
+        padding-bottom: 250px;
     } 50%{
-        padding-bottom: 20rem;
+        padding-bottom: 300px;
     }
 }
 
@@ -170,6 +169,12 @@ footer{
 
 
 @media (min-width: 320px){
+    .preloading h1{
+        font-size: 20px;
+    }
+    .rocket_launch{
+        font-size: 70px;
+    }
     .row{
         width: 70%;
     }
@@ -194,9 +199,20 @@ footer{
     .text{
         font-size: 10px;
     }
+    .person_raised_hand{
+        font-size: 20px;
+        padding-left: 15px;
+        margin-top: -5px;
+    }
 }
 
 @media (min-width: 375px){
+    .preloading h1{
+        font-size: 25px;
+    }
+    .rocket_launch{
+        font-size: 75px;
+    }
     .row{
         width: 70%;
     }
@@ -214,11 +230,23 @@ footer{
     .text{
         font-size: 16px;
     }
+    .person_raised_hand{
+        font-size: 25px;
+        padding-left: 10px;
+        margin-top: -10px;
+    }
+
 }
 
 @media (min-width: 425px){
     .row{
         width: 70%;
+    }
+    .preloading h1{
+        font-size: 30px;
+    }
+    .rocket_launch{
+        font-size: 80px;
     }
     .about-me{
         width: 250px;
@@ -234,14 +262,21 @@ footer{
     .text{
         font-size: 16px;
     }
+    .person_raised_hand{
+        font-size: 30px;
+    }
+
 }
 
 @media (min-width: 768px){
     .row{
         width: 70%;
     }
-    .box-load{
-        font-size: 5em;
+    .preloading h1{
+        font-size: 35px;
+    }
+    .rocket_launch{
+        font-size: 85px;
     }
     header{
         padding-top: 4em;
@@ -275,14 +310,26 @@ footer{
         width: 350px;
         height: auto;
     }
+    .person_raised_hand{
+        font-size: 35px;
+        padding-left: 20px;
+        margin-top: -10px;
+    }
+
 }
 
 @media (min-width: 1024px){
+    .preloading h1{
+        font-size: 40px;
+    }
+    .rocket_launch{
+        font-size: 90px;
+    }
     .text-image, .row{
         width: 70%;
     }
-    .box-load{
-        font-size: 7em;
+    :root .box-load{
+        font-size: 20px;
     }
     footer{
         display: flex;
@@ -302,11 +349,18 @@ footer{
     .text{
         font-size: 12px;
     }
+    .person_raised_hand{
+        font-size: 40px;
+    }
+
 }
 
 @media (min-width: 1440px){
-    .box-load{
-        font-size: 9em;
+    .preloading h1{
+        font-size: 45px;
+    }
+    .rocket_launch{
+        font-size: 95px;
     }
     header{
         padding-top: 7em;
@@ -332,11 +386,18 @@ footer{
     .text{
         font-size: 18px;
     }
+    .person_raised_hand{
+        font-size: 45px;
+    }
+
 }
 
 @media (min-width: 2560px){
-    .box-load{
-        font-size: 12em;
+    .preloading h1{
+        font-size: 50px;
+    }
+    .rocket_launch{
+        font-size: 100px;
     }
     header{
         padding-top: 10em;
@@ -361,5 +422,9 @@ footer{
     .text{
         font-size: 30px;
     }
+    .person_raised_hand{
+        font-size: 60px;
+    }
+
 
 }
