@@ -28,31 +28,30 @@ a{
 }
 
 main{
-    font-size: 3rem;
+    font-size: 4rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding-top: 3em;
-    color: rgba(237, 224, 224, 1);
+    color: var(--soft-pink);
 }
 
 footer{
     text-align: center;
     font-family: Figtree;
-    color: rgba(237, 224, 224, 1);
-    font-size: 3rem;
-    margin-top: 2em;
+    color: var(--soft-pink);
+    font-size: 2rem;
+    margin-top: 40px;
 }
 
 
 
 @keyframes load{
     0%, 100%{
-        padding-bottom: 15rem
-        ;
+        padding-bottom: 250px;
     } 50%{
-        padding-bottom: 21rem;
+        padding-bottom: 300px;
     }
 }
 
@@ -70,6 +69,7 @@ footer{
     font-family: var(--primary-font);
     text-align: center;
     color: var(--soft-pink);
+    font-size: 3rem;
 }
 
 .rocket_launch{
@@ -92,13 +92,15 @@ footer{
     justify-content: space-between;
     border-bottom: 1px white solid;
     align-items: center;
-    padding: 2rem;
+    margin-top: -5rem;
+    padding-bottom: 3rem;
 }
 
 .person_raised_hand{
     font-size: 4rem;
     padding-left: 4rem;
     color: white;
+    margin: 0;
 }
 
 .links{
@@ -156,19 +158,25 @@ footer{
 
 .row{
     margin-top: 2em;
-    width: 90%;
     border-bottom: solid #fff 1px;
 }
 
-footer h1{
-    padding: 0.5em 1em;
+.main-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
 @media (min-width: 320px){
-
-    .box-load{
-        font-size: 2em;
+    .preloading h1{
+        font-size: 20px;
+    }
+    .rocket_launch{
+        font-size: 70px;
+    }
+    .row{
+        width: 70%;
     }
     :root{
         font-size: 4px;
@@ -188,9 +196,26 @@ footer h1{
         display: flex;
         flex-direction: column;
     }
+    .text{
+        font-size: 10px;
+    }
+    .person_raised_hand{
+        font-size: 20px;
+        padding-left: 15px;
+        margin-top: -5px;
+    }
 }
 
 @media (min-width: 375px){
+    .preloading h1{
+        font-size: 25px;
+    }
+    .rocket_launch{
+        font-size: 75px;
+    }
+    .row{
+        width: 70%;
+    }
     header{
         padding-top: 2em;
     }
@@ -202,22 +227,56 @@ footer h1{
     a{
         font-size: 1.5em;
     }
+    .text{
+        font-size: 16px;
+    }
+    .person_raised_hand{
+        font-size: 25px;
+        padding-left: 10px;
+        margin-top: -10px;
+    }
+
 }
 
 @media (min-width: 425px){
+    .row{
+        width: 70%;
+    }
+    .preloading h1{
+        font-size: 30px;
+    }
+    .rocket_launch{
+        font-size: 80px;
+    }
     .about-me{
         width: 250px;
         height: auto;
+    }
+    .text-image{
+        width: 425px;
     }
     .eclipse{
         width: 300px;
         height: auto;
     }
+    .text{
+        font-size: 16px;
+    }
+    .person_raised_hand{
+        font-size: 30px;
+    }
+
 }
 
 @media (min-width: 768px){
-    .box-load{
-        font-size: 5em;
+    .row{
+        width: 70%;
+    }
+    .preloading h1{
+        font-size: 35px;
+    }
+    .rocket_launch{
+        font-size: 85px;
     }
     header{
         padding-top: 4em;
@@ -228,44 +287,80 @@ footer h1{
         padding-right: 5em;
     }
     .text-image{
-        flex-direction: row;
+        flex-direction:row;
         gap: 3em;
         padding: 0em 2em;
+        width: 768px;
     }
     .image{
         padding-left: 6em;
     }
     .text{
         padding-top: 7em;
+        font-size: 13px;
     }
     .button{
         font-size: 1.1em;
     }
+    .eclipse{
+        width: 400px;
+        height: auto;
+    }
+    .about-me{
+        width: 350px;
+        height: auto;
+    }
+    .person_raised_hand{
+        font-size: 35px;
+        padding-left: 20px;
+        margin-top: -10px;
+    }
+
 }
 
 @media (min-width: 1024px){
+    .preloading h1{
+        font-size: 40px;
+    }
+    .rocket_launch{
+        font-size: 90px;
+    }
     .text-image, .row{
         width: 70%;
     }
-    .box-load{
-        font-size: 7em;
+    :root .box-load{
+        font-size: 20px;
     }
     footer{
         display: flex;
         justify-content: center;
     }
     .footer{
-        width: 65%;
+        padding-bottom: 25px;
     }
     .eclipse{
-        width: 300px;
+        width: 500px;
         height: auto;
     }
+    .about-me{
+        width: 400px;
+        height: auto;
+    }
+    .text{
+        font-size: 12px;
+    }
+    .person_raised_hand{
+        font-size: 40px;
+    }
+
 }
 
 @media (min-width: 1440px){
-    .box-load{
-        font-size: 9em;
+    .preloading h1{
+        font-size: 45px;
+    }
+    .rocket_launch{
+        font-size: 95px;
     }
     header{
         padding-top: 7em;
@@ -273,23 +368,36 @@ footer h1{
     a{
         font-size: 2em;
     }
-    main, footer {
+    main{
         font-size: 4.5em;
     }
+    footer{
+        font-size: 12px;
+    }
     .about-me{
-        width: 400px;
+        width: 500px;
         height: auto;
     }
 
     .eclipse{
-        width: 500px;
+        width: 600px;
         height: auto;
     }
+    .text{
+        font-size: 18px;
+    }
+    .person_raised_hand{
+        font-size: 45px;
+    }
+
 }
 
 @media (min-width: 2560px){
-    .box-load{
-        font-size: 12em;
+    .preloading h1{
+        font-size: 50px;
+    }
+    .rocket_launch{
+        font-size: 100px;
     }
     header{
         padding-top: 10em;
@@ -298,15 +406,25 @@ footer h1{
         font-size: 3em;
     }
     .eclipse{
-        width: 800px;
-        height: auto;
-    }
-    .about-me{
         width: 700px;
         height: auto;
     }
-    main, footer {
+    .about-me{
+        width: 600px;
+        height: auto;
+    }
+    main {
         font-size: 7em;
     }
+    .footer{
+        padding-bottom: 25px;
+    }
+    .text{
+        font-size: 30px;
+    }
+    .person_raised_hand{
+        font-size: 60px;
+    }
+
 
 }
