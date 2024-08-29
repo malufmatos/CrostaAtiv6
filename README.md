@@ -12,5 +12,5 @@ Projeto: Portfólio de Design
 - [Tela de Loading/Carregamento]: Deve ser personalizada.
 - [Página "Sobre Mim"]: Deve conter informações sobre mim, incluindo experiências e meu histórico.
 
-![image](./imagens/about-me-screenshot.png)
 ![image](./imagens/loading%20screenshots.png)
+![image](./imagens/about-me-screenshot.png)
