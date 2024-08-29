@@ -27,13 +27,32 @@ a{
     padding-right: 5rem;
 }
 
+main{
+    font-size: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3em;
+    color: var(--soft-pink);
+}
+
+footer{
+    text-align: center;
+    font-family: Figtree;
+    color: var(--soft-pink);
+    font-size: 2rem;
+    margin-top: 40px;
+}
+
+
 
 @keyframes load{
     0%, 100%{
         padding-bottom: 15rem
         ;
     } 50%{
-        padding-bottom: 21rem;
+        padding-bottom: 20rem;
     }
 }
 
@@ -50,12 +69,8 @@ a{
 .preloading h1{
     font-family: var(--primary-font);
     text-align: center;
-    line-height: 3rem;
-
-    font-weight: 700;
-    font-size: 3rem;
-
     color: var(--soft-pink);
+    font-size: 3rem;
 }
 
 .rocket_launch{
@@ -78,13 +93,15 @@ a{
     justify-content: space-between;
     border-bottom: 1px white solid;
     align-items: center;
-    padding: 2rem;
+    margin-top: -5rem;
+    padding-bottom: 3rem;
 }
 
 .person_raised_hand{
     font-size: 4rem;
     padding-left: 4rem;
     color: white;
+    margin: 0;
 }
 
 .links{
@@ -92,44 +109,257 @@ a{
     font-weight: 500;
 }
 
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image, .text{
+    text-align: center;
+    padding: 1em;
+}
+
+.position{
+    margin-top: -1em;
+    position: relative;
+    top: 3em;
+    right: 3em;
+}
+
+.text{
+    text-align: start;
+    letter-spacing: 1px;
+    font-family: Figtree;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    margin-bottom: 2em;
+}
+
+.button{
+    color: #fff;
+    background-color: #5334F2;
+    border: solid #fff 1px;
+    border-radius: 10px;
+    padding: 0.3em 0.9em;
+    font-family: Figtree;
+}
+
+.text h1{
+    padding: 1em 0em;
+}
+
+.text .p{
+    padding-bottom: 2em;
+}
+
+.row{
+    margin-top: 2em;
+    border-bottom: solid #fff 1px;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
 @media (min-width: 320px){
+    .row{
+        width: 70%;
+    }
     :root{
         font-size: 4px;
     }
-}
-
-@media (min-width: 375px){
-    :root{
-        font-size: 5px;
+    .title{
+        gap: 2em;
     }
-}
-
-@media (min-width: 425px){
-    :root{
-        font-size: 6px;
+    .eclipse{
+        width: 250px;
+        height: auto;
     }
-}
-
-@media (min-width: 768px){
-    :root{
-        font-size: 7px;
+    .about-me{
+        width: 200px;
+        height: auto;
     }
-}
-
-@media (min-width: 1024px){
-    :root{
-        font-size: 8px;
+    .text-image{
+        display: flex;
+        flex-direction: column;
     }
-}
-
-@media (min-width: 1440px){
-    :root{
+    .text{
         font-size: 10px;
     }
 }
 
-@media (min-width: 2560px){
-    :root{
+@media (min-width: 375px){
+    .row{
+        width: 70%;
+    }
+    header{
+        padding-top: 2em;
+    }
+
+    .position{
+        top: 4em;
+        right: 6em;
+    }
+    a{
+        font-size: 1.5em;
+    }
+    .text{
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 425px){
+    .row{
+        width: 70%;
+    }
+    .about-me{
+        width: 250px;
+        height: auto;
+    }
+    .text-image{
+        width: 425px;
+    }
+    .eclipse{
+        width: 300px;
+        height: auto;
+    }
+    .text{
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 768px){
+    .row{
+        width: 70%;
+    }
+    .box-load{
+        font-size: 5em;
+    }
+    header{
+        padding-top: 4em;
+        padding-bottom: 4em;
+    }
+    a{
+        font-size: 1.5em;
+        padding-right: 5em;
+    }
+    .text-image{
+        flex-direction:row;
+        gap: 3em;
+        padding: 0em 2em;
+        width: 768px;
+    }
+    .image{
+        padding-left: 6em;
+    }
+    .text{
+        padding-top: 7em;
+        font-size: 13px;
+    }
+    .button{
+        font-size: 1.1em;
+    }
+    .eclipse{
+        width: 400px;
+        height: auto;
+    }
+    .about-me{
+        width: 350px;
+        height: auto;
+    }
+}
+
+@media (min-width: 1024px){
+    .text-image, .row{
+        width: 70%;
+    }
+    .box-load{
+        font-size: 7em;
+    }
+    footer{
+        display: flex;
+        justify-content: center;
+    }
+    .footer{
+        padding-bottom: 25px;
+    }
+    .eclipse{
+        width: 500px;
+        height: auto;
+    }
+    .about-me{
+        width: 400px;
+        height: auto;
+    }
+    .text{
         font-size: 12px;
     }
+}
+
+@media (min-width: 1440px){
+    .box-load{
+        font-size: 9em;
+    }
+    header{
+        padding-top: 7em;
+    }
+    a{
+        font-size: 2em;
+    }
+    main{
+        font-size: 4.5em;
+    }
+    footer{
+        font-size: 12px;
+    }
+    .about-me{
+        width: 500px;
+        height: auto;
+    }
+
+    .eclipse{
+        width: 600px;
+        height: auto;
+    }
+    .text{
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 2560px){
+    .box-load{
+        font-size: 12em;
+    }
+    header{
+        padding-top: 10em;
+    }
+    a{
+        font-size: 3em;
+    }
+    .eclipse{
+        width: 700px;
+        height: auto;
+    }
+    .about-me{
+        width: 600px;
+        height: auto;
+    }
+    main {
+        font-size: 7em;
+    }
+    .footer{
+        padding-bottom: 25px;
+    }
+    .text{
+        font-size: 30px;
+    }
+
 }
